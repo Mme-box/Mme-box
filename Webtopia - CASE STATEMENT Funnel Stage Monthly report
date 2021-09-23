@@ -1,0 +1,6 @@
+CASE
+WHEN CONTAINS_TEXt(Campaign name,"Prospecting") OR CONTAINS_TEXT(Campaign name,"TOF")  THEN "Top of the funnel"
+WHEN CONTAINS_TEXt(Campaign name,"MOF") OR CONTAINS_TEXt(Ad set name,"SOCIAL ENG")  OR CONTAINS_TEXt(Ad set name,"VV95")  THEN "Middle of the funnel"
+WHEN CONTAINS_TEXt(Campaign name,"BOF") OR CONTAINS_TEXt(Ad set name,"WV") THEN "Bottom of the funnel"
+ELSE "Else"
+END
