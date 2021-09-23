@@ -1,0 +1,6 @@
+CASE
+    WHEN CONTAINS_TEXT(Ad set name,"IOS") OR CONTAINS_TEXT(Ad set name,"ios") OR CONTAINS_TEXT(Ad set name,"iOS") OR CONTAINS_TEXT(Ad set name,"Ios")  THEN "iOS"
+    WHEN CONTAINS_TEXT(Ad set name,"Android") OR CONTAINS_TEXT(Ad set name,"ANDROID")  OR CONTAINS_TEXT(Campaign name,"App installs | LAL | Text and vid creative experiment") OR CONTAINS_TEXT(Campaign name,"Mothers with Health") THEN "Android"
+    WHEN CONTAINS_TEXT(Ad set name,"Conversions") OR CONTAINS_TEXT(Ad set name,"web") OR CONTAINS_TEXT(Campaign name,"web") OR CONTAINS_TEXT(Campaign name,"Web") OR CONTAINS_TEXT(Campaign name,"Landing no reg") OR CONTAINS_TEXT(Campaign name,"Conversions") OR CONTAINS_TEXT(Campaign name,"NHS test 2") OR CONTAINS_TEXT(Campaign name,"Im not comf with tech") OR  CONTAINS_TEXT(Campaign name,"Experiment campaign") THEN "web_app"
+    ELSE "Else"
+END
